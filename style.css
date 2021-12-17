@@ -15,6 +15,7 @@ header{
     width: 100%;
     position: fixed;
     top:0;
+    z-index: 9999;
 }
 header nav{
     float: right;
@@ -28,6 +29,7 @@ header nav ul{
 header nav ul li{
     float: left;
     padding:30px
+    
 }
 header nav ul li a{
     text-decoration: none;
@@ -35,6 +37,25 @@ header nav ul li a{
     background-color: white;
     color: black;
     border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+header nav ul li:nth-child(1) a:hover{
+    background-color: black;
+    color: red;
+    transition: 0.3s;
+}
+header nav ul li:nth-child(2) a:hover{
+    background-color: black;
+    color: green;
+    transition: 0.3s;
+}
+header nav ul li:nth-child(3) a:hover{
+    background-color: black;
+    color: yellow;
+    transition: 0.3s;
 }
 
 
@@ -46,10 +67,26 @@ header nav ul li a{
 .red{background-color: red;}
 .green{background-color: green;}
 .yellow{background-color: yellow;}
-
+#green{color: green;}
 main .container{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
+
+main .container .container__child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+main .container .container__child h1{
+    text-align: center;
+    color: yellow;
+    font-size: 45px;
+    
+}
+
 
 
